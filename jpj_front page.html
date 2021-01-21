@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+    background-color:powderblue;
+	/*background: url(https://picsum.photos/500);*/
+	text-align:center;
+}
+  
+
+    .navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}  
+
+<!--       -->
+input {
+        padding: 15px 100px;
+        margin: 10px 4px;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+      }
+      input:hover {
+        opacity: 0.5;
+      }
+
+	  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33%;
+  padding: 1px;
+}
+	  /* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>   
+<!--
+<div class="header">
+  <a style="text-align:center; font-size:50px; color:red; ">J</a>
+  <a style="text-align:center; font-size:50px; color:blue;">P</a>
+  <a style="text-align:center; font-size:50px; color:black;">J </a>
+  <a style="text-align:center; font-size:50px; color:yellow;"> T</a>
+  <a style="text-align:center; font-size:50px; color:orange;">R</a>
+  <a style="text-align:center; font-size:50px; color:brown;">U</a>
+  <a style="text-align:center; font-size:50px; color:grey;">S</a>
+  <a style="text-align:center; font-size:50px; color:red;">T</a>
+  
+    </div>
+ -->
+ <div class="header">
+  <a style="text-align:center; font-size:50px; color:red; ">Welcome to JPJ </a>
+  
+    </div>
+<div class="navbar">
+  <a href="#" class="right">ABOUT US</a>
+  <a href="#" class="right">ADMIN</a>
+  <a href="#" class="right">ENTRY</a>
+  <a href="#" class="right">HOME</a>
+  
+</div>
+
+<!--
+<div class="loginbox">
+	<p style="margin-top:100px;" ></p>
+	  <h1 style="text-align:center;">Login here</h1>
+<form>
+	<p style="text-align:center;">Username</P>
+	<p style="text-align:center;"><input type="text" name="" placeholder="Enter Username" style="text-align:center;"></p>
+	<p style="text-align:center;">Password</p>
+	<p style="text-align:center;"><input type="password" name="" placeholder="Enter Password" > 
+	<input type="Submit" name="" value="Login" > <br>
+	<a href="#" >Lost your password?</a> 
+	<a href="#" >Don't have an account?</a></p>
+</form>
+	</div>
+-->
+
+<section class="vision-content">
+		<div class="container">
+			<h2>Mission <span>Your Dream Is Our Mission</span></h2>
+			
+		
+		</div>
+	</section>
+	
+	<br><br>
+<div class="row">
+  <div class="column">
+<img border="0" alt="Junior college" src="juniorcollege.jpg" width="300" height="250">	
+<br>
+<a href="./jpj_junior.html">
+    <input type="button" value="JPJ Junior" />
+	</a>
+</div>
+<div class="column">
+<img border="0" src="managementclg.jpg" width="300" height="250">
+<br>
+<a href="./jpj_management.html">
+    <input type="button" value="JPJ Management" />
+</a>
+</div>
+<div class="column">
+<img border="0" src="tcet.jpg" width="300" height="250">
+<br>
+<a href="./jpj_engineering.html">
+    <input type="button" value="JPJ Engineering" />
+</a>
+</div>
+</div>
+<!--
+<a href=""> JPJ Junior College</a> 
+<a href=""> JPJ Engineering College</a>
+<a href=""> JPJ Management</a>
+-->
+</body>
+</html>

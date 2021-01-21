@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    
+    <style>
+
+        h2{
+            font-size: 35px;
+            text-align: center;
+             
+        }
+        #form_table{
+            background-color: rgba(59, 153, 102, 0.25);    
+            
+            color:black;
+            font-family:Georgia;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 17px;;
+            width: 900px;
+            height: 600px;       
+            
+        }
+        td{
+            border-style: hidden;
+            width: 600px;
+            height: 20px;
+        }
+
+        body{
+            background-image: url('select_bg.jpg');
+            background-position: top;
+            background-repeat: repeat-x;
+            
+        }
+        
+        #submit_bt{
+            border-radius: 7px;
+            padding: 20px 15px;
+            font-size: 25px;
+            border-color:lightgreen;
+            position: relative;
+            left: 400px;
+            top: 10px;
+            
+        }
+        #preview_bt{
+            border-radius: 7px;
+            padding: 20px 15px;
+            font-size: 25px;
+            border-color:lightblue;
+            position: relative;
+            left: 600px;
+            top: 15px;
+        }
+        .button {
+            transition-duration: 0.4s;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          }
+          
+        .button:hover {
+            background-color: lightgreen; /* Green */
+            color: black;
+        }
+        .button_p {
+            transition-duration: 0.4s;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          }
+          
+        .button_p:hover {
+            background-color: lightblue; /* Green */
+            color: black;
+        }
+        input {
+                width: 220px;
+                font-size: 15px;
+                /*font-;*/
+
+        }
+
+    </style>
+    <h2>Please Enter The Credentials For Student Registration</h2>    
+
+</head>
+
+<body>
+
+<form id="f1" action="stud_insert.php" method="POST">    
+
+    <table id='form_table' border="2" bgcolor=#808080 align='center' cellspacing='30'>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td><input type='text' placeholder='Name ' name='fname' required></td>
+        </tr>
+         <tr>
+            <td>
+                Student I.D
+            </td>
+            <td>
+                <input type='number' placeholder='College ID number' name='id' required></td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Year
+            </td>
+            <td><select name='year'>
+                Year
+           <option>
+                F.E
+            </option>
+            <option>
+                S.E
+            </option>
+            <option>
+                T.E
+            </option>
+            <option>
+                B.E
+            </option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Department 
+            </td>
+            <td><select name='dept'>
+                Depatrment
+            
+            <option>
+                Computer Science
+            </option>
+            <option>
+                Information Technology
+            </option>
+            <option>
+                E&tc
+            </option>
+            <option>
+                Civil
+            </option>
+            <option>
+                Mechanical
+            </option>
+            <option>
+                 ELEX
+            </option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Address
+            </td>
+            <td><input type='text' placeholder='Address' name ='Address' required></td>
+
+        </tr>
+        <tr>
+            <td>
+                JEE Rank 
+            </td>
+            <td><input type='text' placeholder='JEE Rank' name='Rank' required></td>
+        </tr>
+        <tr>
+            <td>
+                Teachers I.D
+            </td>
+            <td><input type='number' placeholder='College ID number' name='id' required></td>
+        </tr>
+        <tr>
+            <td>
+                National / International
+            </td>
+            <td><select name='stage'required>
+                Level
+               
+                <option>
+                    National
+                </option>
+                <option>
+                    International
+                </option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Date
+            </td>
+            <td>
+            <input type="date"  name="Date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lab No.
+            </td>
+            <td><input type='number'  name='Lab No.'required></td>
+        </tr>
+        <tr>
+    <table>
+        <tr>
+     <td><input id='submit_bt' class='button' type="submit" ></td>
+        </tr>
+    </table>
+
+</form>
+
+
+</body>

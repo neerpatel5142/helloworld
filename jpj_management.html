@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+    background-color:powderblue;
+	/*background: url(https://picsum.photos/500);*/
+	text-align:center;
+}
+  
+
+    .navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+
+<!--    -->
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: grey;
+}
+
+	  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33%;
+  padding: 1px;
+}
+	  /* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+</style>
+</head>
+<body>   
+<!--
+<div class="header">
+  <a style="text-align:center; font-size:50px; color:red; ">J</a>
+  <a style="text-align:center; font-size:50px; color:blue;">P</a>
+  <a style="text-align:center; font-size:50px; color:black;">J </a>
+  <a style="text-align:center; font-size:50px; color:yellow;"> T</a>
+  <a style="text-align:center; font-size:50px; color:orange;">R</a>
+  <a style="text-align:center; font-size:50px; color:brown;">U</a>
+  <a style="text-align:center; font-size:50px; color:grey;">S</a>
+  <a style="text-align:center; font-size:50px; color:red;">T</a>
+  
+    </div>
+ -->
+ <div class="header">
+  <a style="text-align:center; font-size:50px; color:red; ">Welcome to JPJ Management College </a>
+  
+    </div>
+<div class="navbar">
+  <a href="#" class="right">ABOUT US</a>
+  <a href="#" class="right">ADMIN</a>
+  <a href="#" class="right">ENTRY</a>
+  <a href="jpj_front page.html" class="right">HOME</a>
+  
+</div>
+
+<section class="vision-content">
+		<div class="container">
+			<h2> Entering as </h2>
+		</div>
+	</section>
+	
+<div class="row">
+  <div class="column">
+  <div class="container">
+  <img src="teacherlogin.jpeg" alt="Snow" style="width:100%">
+  <a href="teacherlogin.html"><button class="btn">Teacher Login</button></a>
+</div>
+</div>
+<div class="column">
+  <div class="container">
+  <img src="studentlogin.jpeg" alt="Snow" style="width:100%">
+  <a href="studentlogin.html"><button class="btn">Student Login</button>
+</div>
+</div>
+<div class="column">
+  <div class="container">
+  <img src="nonteaching.jpg" alt="Snow" style="width:100%">
+  <a href="nonteachinglogin.html"><button class="btn">Non Teaching Staff Login</button>
+</div>
+</div>
+</div>
+
+	
+	</body>
+</html>

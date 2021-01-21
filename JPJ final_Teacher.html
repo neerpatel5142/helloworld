@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="jquery-3.5.1.min.js"></script> !-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    
+    
+    <style>
+
+        h2{
+            font-size: 35px;
+            text-align: center;
+             
+        }
+        #form_table{
+            /*background-image: url('blue1.jpeg');*/
+            /*background-color: rgba(0, 100, 100, 0.1);*/    
+            background-color: rgba(59, 153, 102, 0.25);
+
+            color:black;
+            font-family:Georgia;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 17px;;
+            width: 900px;
+            height: 600px;
+            
+        }
+
+        td{
+            border-style: hidden;
+            width: 600px;
+            height: 20px;
+        }
+
+        #button{
+
+            background-color: green;
+            color:white;
+            height:60px;
+            border-radius: 25px;
+             }
+        
+        body{
+            background-image: url('select_bg.jpg');
+            background-position: top;
+            background-repeat: repeat-x;
+        
+            /*background-position: top right;
+            background-attachment:scroll;
+            background-size: 200px 200px;*/
+    
+            /*background-color: rgba(0, 100, 100, 0.1);*/
+        }
+        input {
+                width: 220px;
+                font-size: 15px;
+
+        }
+        #preview_bt{
+            border-radius: 7px;
+            padding: 20px 15px;
+            font-size: 25px;
+            border-color:lightblue;
+            position: relative;
+            left: 600px;
+            top: 15px;
+        }
+        #submit_bt{
+            border-radius: 7px;
+            padding: 20px 15px;
+            font-size: 25px;
+            border-color:lightgreen;
+            position: relative;
+            left: 400px;
+            top: 15px;
+            
+        }
+        .button {
+            transition-duration: 0.4s;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          }
+          
+        .button:hover {
+            background-color: lightgreen; /* Green */
+            color: black;
+        }
+        .button_p {
+            transition-duration: 0.4s;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          }
+          
+        .button_p:hover {
+            background-color: lightblue; /* Green */
+            color: black;
+        }
+        input {
+            width: 220px;
+            font-size: 15px;
+            /*font-;*/
+
+        }
+        
+    </style>
+    <h2>Please Enter The Credentials For Teacher Registeration</h2>    
+
+</head>
+
+<body>
+
+<form action="prof_insert.php" method="POST">    
+
+    <table id='form_table' border="2" bgcolor=#808080 align='center' cellspacing='30'>
+        <tr>
+            <td>
+               Name
+            </td>
+            <td><input type='text' placeholder='Name' name='fname'required></td>
+        </tr>
+         <tr>
+            <td>
+                Teacher id
+            </td>
+            <td>
+                <input type='number' placeholder='Teacher ID number' name='id' required></td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 Department 
+            </td>
+            <td ><select style="font-size:15px" ; name='dept'>Depatrment
+            
+            <option>
+                Computer Science
+            </option>
+            <option>
+                Information Technology
+            </option>
+            <option>
+                E&tc
+            </option>
+            <option>
+                Civil
+            </option>
+            <option>
+                Mechanical
+            </option>
+            <option>
+                 ELEX
+            </option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Post
+            </td>
+           <td><select name='stage'required>
+                Level
+               
+                <option>
+                    Asst.Teacher
+                </option>
+                <option>
+                    Dept.HOD
+                </option>
+				 <option>
+                    HOD
+                </option>
+            </select>
+            </td>
+        </tr>
+	    <tr>
+            <td>
+               Qualification
+            </td>
+            <td><input type='text' placeholder='Degree' name='qualification'required></td>
+       </tr>
+        <tr>
+            <td>
+                Date of joining
+            </td>
+            <td>
+            <input type="date"  name="Date">
+            </td>
+        </tr>
+	    <tr>
+            <td>Please confirm</td>
+            <td><input type="checkbox"required name=" confirm"><u><br>I confirm my submission</u></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+       <td><input id='submit_bt'class='button'type="submit" onclick=" action="prof_insert.php"></td>
+        </tr>
+    </table>
+ </form>
+ </body>
+</html>
